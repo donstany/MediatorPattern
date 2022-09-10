@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "VtMCDrzBINFlItXfBSKgq720n1Qfo/95ou6lC21aSOAWwVkmtK2iHBY4NzV6G/EXGnzT/T7hKdUCozBfZyttWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pavel.purlantov.accedia\\Documents\\DevBG_MediatR\\WebApplication2\\ClassLibrary1\\BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pavel.purlantov.accedia\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\pavel.purlantov.accedia\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\pavel.purlantov.accedia\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

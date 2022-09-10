@@ -1,0 +1,15 @@
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\bin\Debug\net6.0\BLL.deps.json
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\bin\Debug\net6.0\BLL.dll
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\bin\Debug\net6.0\ref\BLL.dll
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\bin\Debug\net6.0\BLL.pdb
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\BLL.dll
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\ref\BLL.dll
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\BLL.pdb
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\bin\Debug\net6.0\DAL.dll
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\bin\Debug\net6.0\DAL.pdb
+C:\Users\pavel.purlantov.accedia\Documents\DevBG_MediatR\WebApplication2\ClassLibrary1\obj\Debug\net6.0\BLL.csproj.CopyComplete

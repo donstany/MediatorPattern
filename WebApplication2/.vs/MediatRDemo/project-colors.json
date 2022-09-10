@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cb886c56-ed19-40fd-96c3-66bf2e690080": {
+      "ProjectGuid": "cb886c56-ed19-40fd-96c3-66bf2e690080",
+      "DisplayName": "MediatRDemoAPI",
+      "ColorIndex": 0
+    },
+    "24b07cfc-fd8a-4a05-946e-cf73ecb67ff4": {
+      "ProjectGuid": "24b07cfc-fd8a-4a05-946e-cf73ecb67ff4",
+      "DisplayName": "BLL",
+      "ColorIndex": 1
+    },
+    "751cc271-0c4d-436c-aee9-37d4b38bf540": {
+      "ProjectGuid": "751cc271-0c4d-436c-aee9-37d4b38bf540",
+      "DisplayName": "BLL",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "3ab54cfe-0ab8-462b-87a8-d968b44165a6": {
+      "ProjectGuid": "3ab54cfe-0ab8-462b-87a8-d968b44165a6",
+      "DisplayName": "DAL",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

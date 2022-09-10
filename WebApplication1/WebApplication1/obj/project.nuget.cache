@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "25ea3E8hqOd6xy4g+un32R+PQ7E3DAr9wmO/KmwXCDXXQsiharPE6B06iPP7Ay9fhguhFkEBJEVyxaHL/vGmYg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pavel.purlantov.accedia\\Documents\\DevBG_MediatR\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pavel.purlantov.accedia\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\pavel.purlantov.accedia\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\pavel.purlantov.accedia\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\pavel.purlantov.accedia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
