@@ -5,7 +5,7 @@ Message message = new Message();
 message.CustomMessage = "Welcome by Email";
 EmailMessageCommand emailMessageCommand = new EmailMessageCommand(message);
 
-Mes sage message2 = new Message();
+Message message2 = new Message();
 message2.CustomMessage = "Welcome by SMS";
 SmsMessageCommand smsMessageCommand = new SmsMessageCommand(message2);
 

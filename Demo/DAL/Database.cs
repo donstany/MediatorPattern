@@ -2,7 +2,7 @@
 
 namespace DAL
 {
-    public class Database
+    public class Database : IDatabase
     {
         private List<ValueEntity> _valueEntities;
         public Database()
@@ -88,6 +88,16 @@ namespace DAL
             await Task.Run(() => result = _valueEntities.Where(func).FirstOrDefault(), cancellationToken);
 
             return result;
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            await Task.Run(() =>
+            {
+                var entity = _valueEntities.FirstOrDefault(x => x.Id == id);
+                _valueEntities.Remove(entity!);
+            });
+            return true;
         }
     }
 }

@@ -5,15 +5,16 @@ namespace BLL.Requests.ValuesRequest
 {
     public class ValuesRequestHandler : IRequestHandler<ValueRequest, ValueResponse>
     {
-        private readonly Database database;
-        public ValuesRequestHandler()
+        private readonly IDatabase _database;
+
+        public ValuesRequestHandler(IDatabase database)
         {
-            database = new Database();
+            _database = database;
         }
 
         public async Task<ValueResponse> Handle(ValueRequest request, CancellationToken cancellationToken)
         {
-            return (await database.FilterAsync(x => x.Id == request.Id, cancellationToken))
+            return (await _database.FilterAsync(x => x.Id == request.Id, cancellationToken))
                 .Select(x => new ValueResponse { Id = x.Id, Name = x.Name })
                 .First();
         }

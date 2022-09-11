@@ -1,4 +1,6 @@
 using BLL.Requests.ValuesRequest;
+using BLL.Values.Commands.DeleteValueCommand;
+using DAL;
 using FluentValidation;
 using MediatR;
 using MediatRDemoAPI;
@@ -16,10 +18,12 @@ builder.Services.AddScoped<IValidator<ValueRequest>, ValueRequestValidator>();
 
 builder.Services.AddValidatorsFromAssemblies(new List<Assembly>() { typeof(DateTime).GetTypeInfo().Assembly });
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidation<,>));
-
+builder.Services.AddTransient<IDatabase, Database>();
 
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+
 builder.Services.AddTransient<IRequestHandler<ValueRequest, ValueResponse>, ValuesRequestHandler>();
+builder.Services.AddTransient<IRequestHandler<DeleteValueCommand, bool>, DeleteValueCommandHandler>();
 
 var app = builder.Build();
 

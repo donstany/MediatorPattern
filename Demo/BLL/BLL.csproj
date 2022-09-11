@@ -13,7 +13,6 @@
     <ProjectReference Include="..\DAL\DAL.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Values\Commands\DeleteValueCommand\" />
     <Folder Include="Values\Commands\UpdateValueCommand\" />
   </ItemGroup>
 

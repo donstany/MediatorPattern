@@ -1,10 +1,6 @@
 ﻿using BLL.Requests.ValuesRequest;
-using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using WebApplication2.Models;
-
 namespace WebApplication2.Controllers
 {
     public class HomeController : Controller
@@ -26,18 +22,6 @@ namespace WebApplication2.Controllers
         public ActionResult Index()
         {
             return Ok();
-        }
-
-        /// <summary>
-        /// Get value by id
-        /// </summary>
-        /// <param name="request"></param>
-        /// <returns>ValueRequestResponse</returns>
-        [HttpGet("value")]
-        public ActionResult Get(ValueRequest request)
-        {
-            var response = _mediatr.Send(request);
-            return Ok(response.Result);
         }
     }
 }
