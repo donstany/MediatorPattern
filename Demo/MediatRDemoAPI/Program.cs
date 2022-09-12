@@ -1,5 +1,6 @@
 using BLL.Requests.ValuesRequest;
 using BLL.Values.Commands.DeleteValueCommand;
+using BLL.Values.Requests.ValuesRequest;
 using DAL;
 using FluentValidation;
 using MediatR;
@@ -13,7 +14,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddScoped<IValidator<ValueRequest>, ValueRequestValidator>();
 
 builder.Services.AddValidatorsFromAssemblies(new List<Assembly>() { typeof(DateTime).GetTypeInfo().Assembly });
@@ -22,8 +22,9 @@ builder.Services.AddTransient<IDatabase, Database>();
 
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
-builder.Services.AddTransient<IRequestHandler<ValueRequest, ValueResponse>, ValuesRequestHandler>();
+builder.Services.AddTransient<IRequestHandler<ValueRequest, ValueResponse>, ValueRequestHandler>();
 builder.Services.AddTransient<IRequestHandler<DeleteValueCommand, bool>, DeleteValueCommandHandler>();
+builder.Services.AddTransient<IRequestHandler<ValueListRequest, ValueListResponse>, ValueListRequestHandler>();
 
 var app = builder.Build();
 

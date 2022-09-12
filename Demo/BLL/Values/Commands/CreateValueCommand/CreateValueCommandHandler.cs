@@ -5,11 +5,11 @@ namespace BLL.Values.Commands.CreateValueCommand
 {
     public class CreateValueCommandHandler : IRequestHandler<CreateValueCommand, int>
     {
-        private readonly Database _database;
+        private readonly IDatabase _database;
 
-        public CreateValueCommandHandler()
+        public CreateValueCommandHandler(IDatabase database)
         {
-            _database = new Database();
+            _database = database;
         }
 
         public async Task<int> Handle(CreateValueCommand request, CancellationToken cancellationToken)

@@ -3,5 +3,5 @@
 //
 public interface IMessageCommand
 {
-	void DoAction();
+	void Send();
 }

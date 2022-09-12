@@ -10,7 +10,7 @@ public class EmailMessageCommand : IMessageCommand
 		_message = message;
 	}
 
-	public void DoAction()
+	public void Send()
 	{
 		_message.EmailMessage();
 	}

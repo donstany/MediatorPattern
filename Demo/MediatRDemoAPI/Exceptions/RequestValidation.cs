@@ -1,7 +1,5 @@
 ﻿using FluentValidation;
-using FluentValidation.Results;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
 
 namespace MediatRDemoAPI
 {

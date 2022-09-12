@@ -1,4 +1,5 @@
 ﻿using DAL.Models;
+using Models;
 
 namespace DAL
 {
@@ -13,37 +14,43 @@ namespace DAL
                 {
                     Id = 1,
                     Name = "Name 1",
-                    Description = "Long description"
+                    Description = "Long description",
+                    CreatedDate = new DateTime(2020, 1, 1)
                 },
                 new ValueEntity
                 {
                     Id = 2,
                     Name = "Name 2",
-                    Description = "Long description"
+                    Description = "Long description",
+                    CreatedDate = new DateTime(2020, 1, 1)
                 },
                 new ValueEntity
                 {
                     Id = 3,
                     Name = "Name 3",
-                    Description = "Long description"
+                    Description = "Long description",
+                    CreatedDate = new DateTime(2020, 1, 1)
                 },
                 new ValueEntity
                 {
                     Id = 4,
                     Name = "Name 4",
-                    Description = "Long description"
+                    Description = "Long description",
+                    CreatedDate = new DateTime(2020, 1, 1)
                 },
                 new ValueEntity
                 {
                     Id = 5,
                     Name = "Name 5",
-                    Description = "Long description"
+                    Description = "Long description",
+                    CreatedDate = new DateTime(2020, 1, 1)
                 },
                 new ValueEntity
                 {
                     Id = 6,
                     Name = "Name 6",
-                    Description = "Long description"
+                    Description = "Long description",
+                    CreatedDate = new DateTime(2020, 1, 1)
                 }
             };
         }
@@ -72,6 +79,25 @@ namespace DAL
             return result;
         }
 
+        public async Task<IEnumerable<ValueEntity>> GetAllAsync(CancellationToken cancellationToken = default)
+        {
+            var result = new List<ValueEntity>();
+
+            await Task.Run(() => result = _valueEntities.ToList(), cancellationToken);
+
+            return result;
+        }
+
+        public async Task<IEnumerable<T>> GetAllAsync<T>(CancellationToken cancellationToken = default) where T : IValue
+        {
+            var result = new List<ValueEntity>();
+
+            await Task.Run(() => result = _valueEntities.ToList(), cancellationToken);
+
+            return (IEnumerable<T>)result.ConvertAll(new Converter<ValueEntity, IValue>(EntityToValue));
+        }
+
+
         public async Task<IQueryable<ValueEntity>> QueryAsync(Func<ValueEntity, bool> func, CancellationToken cancellationToken = default)
         {
             var result = new List<ValueEntity>();
@@ -85,7 +111,7 @@ namespace DAL
         {
             var result = new ValueEntity();
 
-            await Task.Run(() => result = _valueEntities.Where(func).FirstOrDefault(), cancellationToken);
+            await Task.Run(() => result = _valueEntities.FirstOrDefault(func), cancellationToken);
 
             return result;
         }
@@ -98,6 +124,11 @@ namespace DAL
                 _valueEntities.Remove(entity!);
             });
             return true;
+        }
+
+        public static IValue EntityToValue(ValueEntity valueEntity)
+        {
+            return new Value { Id = valueEntity.Id, Name = valueEntity.Name };
         }
     }
 }
